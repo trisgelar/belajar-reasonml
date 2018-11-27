@@ -2,16 +2,22 @@
 'use strict';
 
 
-console.log("Hello");
+console.log(10);
 
-console.log("x");
+console.log(10);
 
-console.log(23);
+function add(x, y) {
+  return x + y | 0;
+}
 
-console.log(-23);
+var score = 10;
 
-console.log(23.0);
+var myInt = 9;
 
-console.log(-23.0);
+var x = 10;
 
+exports.score = score;
+exports.myInt = myInt;
+exports.add = add;
+exports.x = x;
 /*  Not a pure module */
