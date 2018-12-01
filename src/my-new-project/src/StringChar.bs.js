@@ -2,13 +2,25 @@
 'use strict';
 
 
+var world = "世界";
+
+var helloWorld = "你好，" + (String(world) + "");
+
 var multilineGreeting = "Hello\n    world";
 
 var oneSlash = "\\";
 
 var greeting = "Hello world!";
 
+var greetingAndOneSlash = "Hello\n    World\n    \\\n    He\n";
+
+var firstLetterOfAlphabet = /* "a" */97;
+
 exports.multilineGreeting = multilineGreeting;
 exports.oneSlash = oneSlash;
 exports.greeting = greeting;
-/* No side effect */
+exports.greetingAndOneSlash = greetingAndOneSlash;
+exports.world = world;
+exports.helloWorld = helloWorld;
+exports.firstLetterOfAlphabet = firstLetterOfAlphabet;
+/* helloWorld Not a pure module */
